@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ayazafzal.i170014_i170161">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.I170014_i170161">
+        <activity
+            android:name=".CallingScreen"
+            android:exported="true" />
+        <activity
+            android:name=".callScreen"
+            android:exported="true" />
+        <activity
+            android:name=".chatMessage"
+            android:exported="true" />
+        <activity
+            android:name=".selectFriend"
+            android:exported="true" />
+        <activity
+            android:name=".addFriends_Eight"
+            android:exported="true" />
+        <activity
+            android:name=".ContactScreen_Seven"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileScreen_Six"
+            android:exported="true" />
+        <activity
+            android:name=".Home_Five"
+            android:exported="true" />
+        <activity
+            android:name=".SendImage_Four"
+            android:exported="true" />
+        <activity
+            android:name=".LogIn_Three"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp_Two"
+            android:exported="true"></activity>
+        <activity
+            android:name=".SplashScreen_One"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

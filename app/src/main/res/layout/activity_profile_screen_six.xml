@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#232222"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp_Two">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Create Profile"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"/>
+        <EditText
+            android:id="@+id/newFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="First Name"
+            android:textColorHint="#948F8A"
+            android:backgroundTint="#948F8A"
+            android:textColor="#948F8A"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/newLastName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Last Name"
+            android:textColorHint="#948F8A"
+            android:backgroundTint="#948F8A"
+            android:textColor="#948F8A"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/newAccountPhone"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Phone Number"
+            android:textColorHint="#948F8A"
+            android:backgroundTint="#948F8A"
+            android:textColor="#948F8A"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/newAccountGender"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Gender"
+            android:textColorHint="#948F8A"
+            android:backgroundTint="#948F8A"
+            android:textColor="#948F8A"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/newAccountBio"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Write Something about yourself...."
+            android:textColorHint="#948F8A"
+            android:backgroundTint="#948F8A"
+            android:textColor="#948F8A"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:inputType="textShortMessage"/>
+        <Button
+            android:id="@+id/takeImageCamera"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Take Profile Image."
+            android:background="@drawable/delete_button"/>
+        <Button
+            android:id="@+id/pickImageGallery"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Use Gallery"
+            android:background="@drawable/delete_button"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/logInScreenTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity=""
+                android:text="LOGIN"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

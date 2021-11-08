@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="horizontal"
+    android:layout_marginRight="10dp"
+    android:layout_margin="20dp"
+    android:id="@+id/recyclerViewRowAllUsers"
+    android:weightSum="10">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/userPictureChat"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="40dp"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        app:civ_border_width="3dp"
+        app:civ_border_color="#FF000000"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="vertical"
+         android:background="@drawable/background_left"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:id="@+id/messageTile1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/usersMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:paddingTop="5dp"
+                android:text="Default Message by me" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/messageTile2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="4"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/usersTime"
+                android:layout_gravity="bottom|right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="now">
+            </TextView>
+
+            <TextView
+                android:id="@+id/userScrenshot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="140dp"
+                android:layout_marginRight="20dp"
+                android:text="Safe"
+                android:textSize="10sp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232222"
+    tools:context=".Home_Five"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:weightSum="10">
+        <ImageView
+            android:id="@+id/currentUserImage7"
+            android:layout_marginTop="18dp"
+            android:layout_width="0dp"
+            android:padding="15dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:weightSum="4"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/currentUserName7"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Users Name"
+            android:layout_weight="2.5"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginTop="38dp"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Online Now"
+            android:layout_weight="1.5"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:layout_gravity="center"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/editButtonScreen7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1.5"
+            android:padding="12dp"
+            android:textColor="#00394F"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="#232222">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewShowChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#232222"
+        android:layout_weight="1.5"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/typedMessage"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/delete_button"
+            android:backgroundTint="#2D2E2D"
+            android:paddingLeft="50dp"
+            android:text="Type Message"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/sendMessage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="-50dp"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/mic_chat"
+            android:padding="10dp"/>
+        <ImageView
+            android:id="@+id/openCamera"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="-80dp"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/cam_chat"
+            android:padding="5dp"/>
+        <ImageView
+            android:id="@+id/openGallery"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="-80dp"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/gallery"
+            android:padding="5dp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="-300dp"
+            android:backgroundTint="#2D2E2D"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/emoji_chat"
+            android:padding="10dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
